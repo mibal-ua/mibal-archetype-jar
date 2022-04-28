@@ -25,7 +25,7 @@ mvn archetype:generate ^
     -DinteractiveMode=false ^
     -DgroupId=org.example ^
     -DartifactId=simple ^
-    -Dversion=2.0-SNAPSHOT ^
+    -Dversion=1.0 ^
     -Dpackage=org.example.simple.root
 ```
 
@@ -62,7 +62,7 @@ mvn archetype:generate \
     -DinteractiveMode=false \
     -DgroupId=org.example \
     -DartifactId=simple \
-    -Dversion=2.0-SNAPSHOT \
+    -Dversion=1.0 \
     -Dpackage=org.example.simple.root
 ```
 
@@ -109,13 +109,13 @@ curl -o /tmp/archetype.jar \
 
 ### For Linux
 
-Setup `devonline-archetype-jar` archetype using `wget` tool
+Setup `mibal-archetype-jar` archetype using `wget` tool
 
 *(FYI: If `wget` tool is not available on your computer, please install this tool manually before using the following setup instructions)*
 
 ```bash
 wget -O /tmp/archetype.jar \
-    -q https://github.com/devonline-academy/devonline-archetype-jar/releases/latest/download/devonline-archetype-jar-1.0.jar \
+    -q https://github.com/mibal-ukraine/mibal-archetype-jar/releases/latest/download/mibal-archetype-jar-1.0.jar \
     && mvn org.apache.maven.plugins:maven-install-plugin:3.0.0-M1:install-file -Dfile=/tmp/archetype.jar \
     && rm -rf /tmp/archetype.jar
 ```
