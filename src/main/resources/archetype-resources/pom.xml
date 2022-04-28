@@ -23,10 +23,7 @@
     <artifactId>${artifactId}</artifactId>
     <version>${version}</version>
 
-    <name>TODO</name>
-    <description>TODO</description>
     <url>https://t.me/mibal_ua</url>
-
     <organization>
         <name>mibal_ua</name>
         <url>https://t.me/mibal_ua</url>
@@ -47,9 +44,9 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:git://github.com/TODO.git</connection>
-        <developerConnection>scm:git:ssh://github.com:TODO.git</developerConnection>
-        <url>http://github.com/TODO/tree/master</url>
+        <connection>scm:git:git://github.com/${artifactId}.git</connection>
+        <developerConnection>scm:git:ssh://github.com:${artifactId}.git</developerConnection>
+        <url>http://github.com/${artifactId}/tree/master</url>
     </scm>
 
     <properties>
