@@ -64,8 +64,8 @@
 
         <!-- Plugins -->
         <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
-        <maven-archetype-plugin.version>3.2.1</maven-archetype-plugin.version>
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
+        <maven-archetype-plugin.version>3.2.1</maven-archetype-plugin.version>
         <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
         <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
         <maven-site-plugin.version>3.11.0</maven-site-plugin.version>
@@ -92,16 +92,26 @@
                 <plugin>
                     <artifactId>maven-archetype-plugin</artifactId>
                     <version>${maven-archetype-plugin.version}</version>
-                    <configuration>
-                        <useDefaultExcludes>false</useDefaultExcludes>
-                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>default-jar</id>
+                            <configuration>
+                                <useDefaultExcludes>false</useDefaultExcludes>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>${maven-resources-plugin.version}</version>
-                    <configuration>
-                        <addDefaultExcludes>false</addDefaultExcludes>
-                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>default-resources</id>
+                            <configuration>
+                                <addDefaultExcludes>false</addDefaultExcludes>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <artifactId>maven-install-plugin</artifactId>

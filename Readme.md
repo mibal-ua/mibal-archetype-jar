@@ -123,13 +123,7 @@ wget -O /tmp/archetype.jar \
 
 ## Build instructions:
 
-#### 1. Install the `3.2.1-SNAPSHOT` version of the `maven-archetype-plugin`:
-
-```bash
-mvn install:install-file -Dfile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.jar
-```
-
-#### 2. Build the latest version of the `mibal-archetype-jar` archetype and install to the local maven repository:
+####  Build the latest version of the `mibal-archetype-jar` archetype and install to the local maven repository:
 
 ```bash
 mvn clean install
